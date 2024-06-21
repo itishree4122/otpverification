@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/otplayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:background="@color/white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update your Password"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter OTP"
+                android:layout_below="@+id/title"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/otp_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#ff5722"
+                    android:inputType="text"
+                    android:paddingStart="5dp"
+                    android:text=""/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:id="@+id/otp_user_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:layout_below="@+id/otp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="137dp"
+                android:background="#2e3fa6"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:layout_below="@+id/otp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                app:boxStrokeWidth="0dp"
+                app:endIconMode="password_toggle"
+
+                app:boxStrokeWidthFocused="0dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="#ff5722"
+                    android:inputType="textPassword"
+                    android:paddingStart="5dp"
+
+                    android:text="" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <EditText
+                android:id="@+id/password_user_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:layout_below="@+id/password"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="137dp"
+                android:background="#2e3fa6"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/repassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Re-Password"
+                android:layout_below="@+id/password"
+                app:endIconMode="password_toggle"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/repassword_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#ff5722"
+                    android:inputType="textPassword"
+                    android:layout_marginEnd="20dp"
+
+                    android:paddingStart="5dp"
+
+                    android:text=""/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <EditText
+                android:id="@+id/repassword_user_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+
+                android:layout_below="@+id/repassword"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="#2e3fa6"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/btn_background"
+                android:text="Update"
+                android:layout_below="@+id/repassword"
+
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
