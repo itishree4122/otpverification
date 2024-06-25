@@ -43,19 +43,22 @@
                 app:boxStrokeWidth="0dp"
                 app:boxStrokeWidthFocused="0dp"
                 >
+
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/email_user"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:backgroundTint="#ff5722"
+                    android:backgroundTint="@color/white"
                     android:inputType="text"
                     android:paddingStart="5dp"
-                    android:text=""/>
+                    android:text=""
+                    tools:ignore="TouchTargetSizeCheck" />
                 <View
                     android:id="@+id/email_user_line"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="#2e3fa6"
+
+                    android:background="#0a1fff"
                     android:layout_marginEnd="20dp"
                     />
 
